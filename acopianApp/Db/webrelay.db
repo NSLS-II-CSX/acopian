@@ -1,0 +1,22 @@
+record(bi, "$(Sys)$(Dev)Sw-Sts"){
+	field(DTYP, "asynUInt32Digital")
+	field(INP, "@asynMask($(INPORT),0,1)UINT16")
+	field(SCAN, "I/O Intr")
+	field(ONAM, "ON")
+	field(ZNAM, "OFF")
+}	
+
+record(bi, "$(Sys)$(Dev)Ilk-Sts"){
+	field(DTYP, "asynUInt32Digital")
+	field(INP, "@asynMask($(INPORT),1,1)UINT16")
+	field(SCAN, "I/O Intr")
+	field(ONAM, "OK")
+	field(ZNAM, "INTERLOCK")
+}	
+
+record(bo, "$(Sys)$(Dev)Sw-Sel"){
+	field(DTYP, "asynUInt32Digital")
+	field(OUT, "@asynMask($(OUTPORT),0,1)UINT16")
+	field(ONAM, "ON")
+	field(ZNAM, "OFF")
+}	
