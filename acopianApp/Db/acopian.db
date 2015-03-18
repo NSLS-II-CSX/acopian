@@ -1,0 +1,6 @@
+record(ai, "$(Sys)$(Dev)E:0-I") {
+    field(DTYP,"asynFloat64")
+    field(INP,"@asyn($(PORT) 0)FLOAT32_LE")
+    field(SCAN,"1 second")
+}   
+
