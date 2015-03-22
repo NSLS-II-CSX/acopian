@@ -1,19 +1,19 @@
 file "db/et-7017.db" {
-	pattern { Sys , Dev , Chan , PORT , SIG , SCALE }
-	{ "XF:23ID1-ES", "{Acopian}", "0", "A1_AI" , "E" , 10 }
-	{ "XF:23ID1-ES", "{Acopian}", "1", "A1_AI" , "E" , 10 }
-	{ "XF:23ID1-ES", "{Acopian}", "2", "A1_AI" , "E" , 100 }
-	{ "XF:23ID1-ES", "{Acopian}", "3", "A1_AI" , "E" , 100 }
-	{ "XF:23ID1-ES", "{Acopian}", "4", "A1_AI" , "E" , 100 }
-	{ "XF:23ID1-ES", "{Acopian}", "5", "A1_AI" , "E" , 100 }
-	{ "XF:23ID1-ES", "{Acopian}", "6", "A1_AI" , "E" , 100 }
-	{ "XF:23ID1-ES", "{Acopian}", "7", "A1_AI" , "E" , 100 }
-	{ "XF:23ID1-ES", "{Acopian}", "0", "A2_AI" , "I" , 10 }
-	{ "XF:23ID1-ES", "{Acopian}", "1", "A2_AI" , "I" , 10 }
-	{ "XF:23ID1-ES", "{Acopian}", "2", "A2_AI" , "I" , 100 }
-	{ "XF:23ID1-ES", "{Acopian}", "3", "A2_AI" , "I" , 100 }
-	{ "XF:23ID1-ES", "{Acopian}", "4", "A2_AI" , "I" , 100 }
-	{ "XF:23ID1-ES", "{Acopian}", "5", "A2_AI" , "I" , 100 }
-	{ "XF:23ID1-ES", "{Acopian}", "6", "A2_AI" , "I" , 100 }
-	{ "XF:23ID1-ES", "{Acopian}", "7", "A2_AI" , "I" , 100 }
+	pattern { Sys , Dev , Chan , PORT , SIG , EGU , SCALE }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "0", "A1_AI" , "E" , "V", 10 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "1", "A1_AI" , "E" , "V", 10 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "2", "A1_AI" , "E" , "V", 100 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "3", "A1_AI" , "E" , "V", 100 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "4", "A1_AI" , "E" , "V", 100 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "5", "A1_AI" , "E" , "V", 100 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "6", "A1_AI" , "E" , "V", 100 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "7", "A1_AI" , "E" , "V", 100 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "0", "A2_AI" , "I" , "I", 10 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "1", "A2_AI" , "I" , "I", 10 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "2", "A2_AI" , "I" , "I", 100 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "3", "A2_AI" , "I" , "I", 100 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "4", "A2_AI" , "I" , "I", 100 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "5", "A2_AI" , "I" , "I", 100 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "6", "A2_AI" , "I" , "I", 100 }
+	{ "XF:23ID1-ES", "{FCCD-PSU}", "7", "A2_AI" , "I" , "I", 100 }
 }

@@ -2,13 +2,12 @@ record(ai, "$(Sys)$(Dev)$(SIG):$(Chan)-I_") {
     field(DTYP,"asynFloat64")
     field(INP,"@asyn($(PORT) $(Chan))INT16")
     field(SCAN,"I/O Intr")
-	#field(LINR, "LINEAR")
-	#field(ESLO, "0.000305185")
-	#field(EOFF, "0")
 	field(FLNK, "$(Sys)$(Dev)$(SIG):$(Chan)-I")
 }   
 
 record(calc, "$(Sys)$(Dev)$(SIG):$(Chan)-I") {
 	field(INPA, "$(Sys)$(Dev)$(SIG):$(Chan)-I_")
 	field(CALC, "$(SCALE)*(A/32767)")
+	field(EGU, "$(EGU)")
+	field(PREC, "3")
 }
