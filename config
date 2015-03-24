@@ -1,0 +1,4 @@
+NAME=es-acopian
+PORT=5014
+HOST=xf23id1-ioc2
+USER=softioc
