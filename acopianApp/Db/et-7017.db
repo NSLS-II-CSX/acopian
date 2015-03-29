@@ -11,4 +11,10 @@ record(calc, "$(Sys)$(Dev)$(SIG):$(Chan)-I") {
 	field(CALC, "$(SCALE)*(A/32767)")
 	field(EGU, "$(EGU)")
 	field(PREC, "3")
+	field(LOW, "$(LOW)")
+	field(HIGH, "$(HIGH)")
+	field(LOLO, "0.01")
+	field(LLSV, "MAJOR")
+	field(LSV, "MINOR")
+	field(HSV, "MINOR")
 }
