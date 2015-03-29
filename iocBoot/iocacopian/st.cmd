@@ -31,7 +31,7 @@ modbusInterposeConfig("Acopian2",0,0)
 #asynSetTraceIOMask("Acopian2",0,4)   # Enable traceIOHex
 #asynSetTraceMask("Acopian2",0,9)     # Enable traceError and traceIODriver
 
-drvModbusAsynConfigure("A1_AI", "Acopian1", 1, 4, 0x0000, 8, 0, 1000, "et-7017-1") 
+drvModbusAsynConfigure("A1_AI", "Acopian1", 1, 4, 0x0000, 8, 0, 100, "et-7017-1") 
 drvModbusAsynConfigure("A2_AI", "Acopian2", 1, 4, 0x0000, 8, 0, 100, "et-7017-2") 
 
 ## Load record instances

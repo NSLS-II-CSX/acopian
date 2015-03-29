@@ -1,8 +1,9 @@
 record(ai, "$(Sys)$(Dev)$(SIG):$(Chan)-I_") {
     field(DTYP,"asynFloat64")
     field(INP,"@asyn($(PORT) $(Chan))INT16")
-    field(SCAN,"I/O Intr")
+    field(SCAN,".1 second")
 	field(FLNK, "$(Sys)$(Dev)$(SIG):$(Chan)-I")
+	field(SMOO, "0.80")
 }   
 
 record(calc, "$(Sys)$(Dev)$(SIG):$(Chan)-I") {
