@@ -13,6 +13,7 @@ include $(TOP)/configure/CONFIG
 DB += webrelay.db
 DB += et-7017.db
 DB += et-7017.substitutions
+DB_INSTALLS += $(EPICS_BASE)/db/iocAdminSoft.db
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add

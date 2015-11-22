@@ -1,9 +1,8 @@
 record(ai, "$(Sys)$(Dev)$(SIG):$(Chan)-I_") {
     field(DTYP,"asynFloat64")
     field(INP,"@asyn($(PORT) $(Chan))INT16")
-    field(SCAN,".1 second")
+    field(SCAN,"I/O Intr")
 	field(FLNK, "$(Sys)$(Dev)$(SIG):$(Chan)-I")
-	field(SMOO, "0.80")
 }   
 
 record(calc, "$(Sys)$(Dev)$(SIG):$(Chan)-I") {
@@ -13,8 +12,6 @@ record(calc, "$(Sys)$(Dev)$(SIG):$(Chan)-I") {
 	field(PREC, "3")
 	field(LOW, "$(LOW)")
 	field(HIGH, "$(HIGH)")
-	field(LOLO, "0.01")
-	field(LLSV, "MAJOR")
-	field(LSV, "MINOR")
-	field(HSV, "MINOR")
+	field(LSV, "MAJOR")
+	field(HSV, "MAJOR")
 }

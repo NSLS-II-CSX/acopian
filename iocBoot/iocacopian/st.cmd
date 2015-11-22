@@ -7,6 +7,9 @@
 
 cd("$(TOP)")
 
+epicsEnvSet("EPICS_CA_ADDR_LIST"      , "10.23.0.255")
+epicsEnvSet("EPICS_CA_AUTO_ADDR_LIST" , "NO")
+
 ## Register all support components
 dbLoadDatabase("dbd/acopian.dbd",0,0)
 acopian_registerRecordDeviceDriver(pdbbase) 
@@ -37,6 +40,12 @@ drvModbusAsynConfigure("A2_AI", "Acopian2", 1, 4, 0x0000, 8, 0, 100, "et-7017-2"
 ## Load record instances
 dbLoadTemplate("$(TOP)/db/et-7017.substitutions")
 
+asSetFilename("/epics/xf/23id/xf23id.acf")
+
+dbLoadRecords("$(TOP)/db/iocAdminSoft.db","IOC=XF:23ID1-CT{IOC:ACOPIAN}")
+
 iocInit()
+
+caPutLogInit("xf23id-ca:7004", 0)
 
 dbl > /cf-update/xf23id1-ioc2.es-acopian.dbl
