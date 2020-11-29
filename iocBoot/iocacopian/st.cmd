@@ -40,6 +40,7 @@ drvModbusAsynConfigure("A2_AI", "Acopian2", 1, 4, 0x0000, 8, 0, 100, "et-7017-2"
 ## Load record instances
 dbLoadTemplate("$(TOP)/db/et-7017.substitutions")
 
+asSetSubstitutions("WS=csxws1")
 asSetFilename("/epics/xf/23id/xf23id.acf")
 
 dbLoadRecords("$(TOP)/db/iocAdminSoft.db","IOC=XF:23ID1-CT{IOC:ACOPIAN}")

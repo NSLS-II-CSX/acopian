@@ -17,19 +17,20 @@ acopian_DBD += base.dbd
 
 # Include dbd files from all support applications:
 acopian_DBD += caPutLog.dbd
+#acopian_DBD += modbus.dbd
+acopian_DBD += modbusSupport.dbd
 acopian_DBD += asyn.dbd
 acopian_DBD += drvAsynIPPort.dbd
 acopian_DBD += system.dbd
 acopian_DBD += asSupport.dbd
 acopian_DBD += devIocStats.dbd
-acopian_DBD += modbus.dbd
 
 # Add all the support libraries needed by this IOC
+acopian_LIBS += modbus
 acopian_LIBS += caPutLog
 acopian_LIBS += asyn
 acopian_LIBS += devIocStats
 acopian_LIBS += autosave
-acopian_LIBS += modbus
 
 # acopian_registerRecordDeviceDriver.cpp derives from acopian.dbd
 acopian_SRCS += acopian_registerRecordDeviceDriver.cpp
