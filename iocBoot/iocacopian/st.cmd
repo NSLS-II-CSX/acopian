@@ -4,11 +4,10 @@
 ## everywhere it appears in this file
 
 < envPaths
+< /epics/common/xf23id1-ioc2-netsetup.cmd
 
 cd("$(TOP)")
 
-epicsEnvSet("EPICS_CA_ADDR_LIST"      , "10.23.0.255")
-epicsEnvSet("EPICS_CA_AUTO_ADDR_LIST" , "NO")
 
 ## Register all support components
 dbLoadDatabase("dbd/acopian.dbd",0,0)
@@ -21,8 +20,8 @@ acopian_registerRecordDeviceDriver(pdbbase)
 #                       int noAutoConnect,
 #                       int noProcessEos);
 
-drvAsynIPPortConfigure("Acopian1","10.23.3.61:502",0,1,1)
-drvAsynIPPortConfigure("Acopian2","10.23.3.62:502",0,1,1)
+drvAsynIPPortConfigure("Acopian1","xf23id1-psu1-mon1.nsls2.bnl.local:502",0,1,1)
+drvAsynIPPortConfigure("Acopian2","xf23id1-psu1-mon2.nsls2.bnl.local:502",0,1,1)
 
 #modbusInterposeConfig(const char *portName, 
 #                      modbusLinkType linkType,
@@ -41,7 +40,7 @@ drvModbusAsynConfigure("A2_AI", "Acopian2", 1, 4, 0x0000, 8, 0, 100, "et-7017-2"
 dbLoadTemplate("$(TOP)/db/et-7017.substitutions")
 
 asSetSubstitutions("WS=csxws1")
-asSetFilename("/epics/xf/23id/xf23id.acf")
+asSetFilename("/epics/common/xf23id.acf")
 
 dbLoadRecords("$(TOP)/db/iocAdminSoft.db","IOC=XF:23ID1-CT{IOC:ACOPIAN}")
 
